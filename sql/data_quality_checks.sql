@@ -1,0 +1,2 @@
+-- Platzhalter für Data Quality Checks
+-- SQL-Logik folgt nach Verifizierung in DBeaver
