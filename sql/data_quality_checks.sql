@@ -4,7 +4,7 @@
 
 -- NOTE: These are only three SQL-queries out of many that I wrote for data quality checks
 
-/* Check 1: Missing values in critical columns */
+/* Check 1: check and count for numm vales */
 
 select
   count(*) filter (where order_id is null) as order_id_nulls,
@@ -12,22 +12,22 @@ select
   count(*) filter (where order_status is null) as order_status_nulls
 from olist_orders_dataset;
 
-/* Check 2: Duplicate primary keys */
+/* Check 2: eliminate rows containing null values in primary key */
 
-CREATE OR REPLACE VIEW vw_orders_clean AS
-SELECT *
-FROM olist_orders_dataset
-WHERE order_id IS NOT NULL
-  AND customer_id IS NOT NULL
-  AND order_status IS NOT NULL;
+select *
+from olist_orders_dataset
+where order_id is not null
+  and customer_id is not null
+  and order_status is not null;
 
 
-/* Check 3: Negative or zero prices */
+/* Check 3: check if customers exist in dataset that had multiple orders */
 
 select
 	customer_id,
 	count(*) as order_count
 from vw_orders_clean
 group by customer_id 
--- having count(*) > 1
+having count(*) > 1
 order by order_count desc;
+
