@@ -112,7 +112,8 @@ select distinct
 
   -- Customer information
 	customer_city,
-	customer_state
+	customer_state,
+	customer_zip_code_prefix
   
 from olist_customer
 order by
@@ -122,6 +123,28 @@ order by
 select *
 from
 	dim_customer;
+
+-- ==========================================================
+-- DIMENSION TABLE: dim_geolocation
+-- Purpose: Create an geolocation dimension
+-- ==========================================================
+
+create or replace view dim_geolocation as
+select distinct on (geolocation_zip_code_prefix)
+	-- Primary key
+	geolocation_zip_code_prefix,
+
+	-- Geolocation information
+	geolocation_lat,
+	geolocation_lng,
+	geolocation_city,
+	geolocation_state
+	
+from olist_geolocation;
+
+select *
+from
+	dim_geolocation;
 
 -- ==========================================================
 -- DIMENSION TABLE: product
