@@ -1,6 +1,10 @@
 
 # Projektdokumentation Olist Datensatz
 
+## Inhaltsverzeichnis
+- [1. Kurzvorstellung Olist](#1-kurzvorstellung-olist)
+- [2. Datensatzbeschreibung](#2-datensatzbeschreibung)
+
 ## 1. Kurzvorstellung Olist
 
 Olist ist ein brasilianisches E-Commerce-Unternehmen, das als Marktplatzplattform für kleine und mittelständische Händler fungiert. 
