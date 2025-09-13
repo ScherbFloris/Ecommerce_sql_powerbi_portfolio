@@ -1,5 +1,7 @@
 
-# 🛍️ E-Commerce Data Portfolio: Data Quality Analysis (Olist Dataset)
+:warning: -- Please Check the English Version Below -- :warning:
+
+# 🛍️ E-Commerce Data Analyst Portfolio
 
 Dieses Projekt analysiert die Datenqualität des öffentlichen Olist-E-Commerce-Datensatzes mithilfe von SQL.
 
