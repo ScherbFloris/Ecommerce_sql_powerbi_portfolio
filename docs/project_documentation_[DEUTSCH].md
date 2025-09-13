@@ -24,14 +24,12 @@ Der Datensatz stammt von [Kaggle](https://www.kaggle.com/datasets/olistbr/brazil
 
 **Datenbereiche:**  
 - **Bestellungen** (Auftrags-IDs, Zeitstempel, Status)  
-- **Produkte** (Kategorie, Beschreibung, Maße, Gewicht)  
+- **Produkte** (Kategorie, Preis, Maße, Gewicht)  
 - **Kunden & Geodaten** (PLZ, Stadt, Bundesstaat)  
-- **Zahlungen** (Beträge, Zahlungsmethoden, Raten)  
-- **Reviews** (Kundenbewertungen und Kommentare – in diesem Projekt nicht analysiert)  
 
 **Eignung des Datensatzes:**  
 Der Olist-Datensatz ist für Analyse- und BI-Projekte besonders geeignet, da er:  
-- **umfangreich** ist (große Datenmenge mit mehreren Millionen Einträgen),  
+- **umfangreich** ist mit einer umfangreich großen Datenmenge,  
 - **realistische Geschäftsprozesse** eines Online-Marktplatzes abbildet,  
-- **vielfältige Dimensionen** enthält (Zeit, Region, Produkt, Kunde, Umsatz, Bewertung),  
+- **vielfältige Dimensionen** enthält (Zeit, Region, Produkt, Kunde, Umsatz),  
 - und sich daher ideal für **SQL-Datenmodellierung** sowie die **Erstellung interaktiver Dashboards** eignet.  
