@@ -13,9 +13,9 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 
 ## 🔍 Inhalt
 
-- 
-- 🔎 SQL-Abfragen zur Datenqualität → [`/sql/data_quality_checks.sql`](sql/data_quality_checks.sql)
-- 📝 Ergebnisse & Bewertung der Datenqualität → [`/docs/data_quality.md`](docs/data_quality.md)
+- Projektdokumentation
+- 🔎 SQL-Abfragen → [`/sql/data_quality_checks.sql`](sql/data_quality_checks.sql)
+- 📝 PowerBI Dashboards → [`/docs/data_quality.md`](docs/data_quality.md)
 
 ## 📂 Struktur
 
