@@ -56,3 +56,23 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 
 # * Dieses Projekt konzentriert sich auf den Zeitraum 2017, da dies das einzige vollständige Jahr im Datensatz ist.
 
+## 4. Methodik / Vorgehen
+
+# 4.1 Datenaufbereitung in SQL
+
+# 4.2 Datenmodellierung & Transformation in in PowerBI
+
+## 5. Ergebnisse (Dashboards)
+
+# 5.1 Sales Overiew Dashboard
+
+# 5.2 Product Analysis Dashboard
+
+# 5.3 Regional Hotspot Analysis
+
+# 6. Empfehlugnen
+
+# 7. Ausblick
+
+
+
