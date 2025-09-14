@@ -71,13 +71,13 @@ Die CSV files wurden in Datenbank-Management-Tool DBeaver geladen. In dieser Umg
 
 Beispielhafte SQL-Abfrage:
 
+```sql
 /* Check 3: check if customers exist in dataset that had multiple orders */
-
 select
-	customer_id,
-	count(*) as order_count
+    customer_id,
+    count(*) as order_count
 from vw_orders_clean
-group by customer_id 
+group by customer_id
 having count(*) > 1
 order by order_count desc;
 
