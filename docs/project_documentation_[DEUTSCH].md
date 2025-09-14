@@ -32,4 +32,26 @@ Der Olist-Datensatz ist für Analyse- und BI-Projekte besonders geeignet, da er:
 - **umfangreich** ist mit einer umfangreich großen Datenmenge,  
 - **realistische Geschäftsprozesse** eines Online-Marktplatzes abbildet,  
 - **vielfältige Dimensionen** enthält (Zeit, Region, Produkt, Kunde, Umsatz),  
-- und sich daher ideal für **SQL-Datenmodellierung** sowie die **Erstellung interaktiver Dashboards** eignet.  
+- und sich daher ideal für **SQL-Datenmodellierung** sowie die **Erstellung interaktiver Dashboards** eignet.
+
+## 3. Problemidentifikation & Zielsetzung
+
+Die reinen Rohdaten von Olist sind umfangreich, aber für Stakeholder schwer direkt zu interpretieren.  
+Besonders für Entscheidungsträger in Marketing und Produktmanagement fehlen schnelle und visuelle Zugänge zu zentralen Fragestellungen.  
+Um datenbasierte Entscheidungen treffen zu können, müssen die Daten aufbereitet und in verständlicher Form dargestellt werden.
+
+### Zentrale Business-Fragen
+1. **Wie entwickeln sich Umsatz, Bestellungen und der durchschnittliche Bestellwert über die Zeit?**  
+2. **Welche Produkte und Kategorien sind die Haupttreiber von Umsatz und Bestellungen?**  
+3. **In welchen Städten und Regionen konzentriert sich die Nachfrage am stärksten?**
+
+### Abgeleitete Dashboards
+Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
+
+| Problem | Ziel | Dashboard | Wichtige KPIs |
+|---------|------|-----------|---------------|
+| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und AOV sichtbar machen | **Sales Overview Dashboard** | Revenue, Orders, AOV, Wachstumsraten (MoM/YoY) |
+| Unklare Performance von Produktkategorien | Umsatztreiber und Potenziale identifizieren | **Product Analysis Dashboard** | Umsatz je Kategorie, Orders je Kategorie, AOV, Top-Produkte |
+| Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben | **Regional Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
+
+
