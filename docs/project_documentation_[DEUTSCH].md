@@ -168,7 +168,7 @@ Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier einge
 
 Nach dem die Views in SQL erstellt wurde, wurden die Views von der Postgres Datenbank in PowerBI importiert und in ein Stern-Schema modelliert.
 
-<img width="953" height="767" alt="image" src="https://github.com/user-attachments/assets/7fe7b848-3d09-48b6-b4eb-bd67e8bb215e" />
+![Regional Demand Hotspots – Top 20 Cities](img/stern_schema.PNG)
 
 ## 5. Ergebnisse (Dashboards)
 
