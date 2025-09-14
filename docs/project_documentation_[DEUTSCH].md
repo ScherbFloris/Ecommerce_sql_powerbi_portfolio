@@ -166,7 +166,7 @@ Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier einge
 
 ### 4.2 Datenmodellierung in PowerBI
 
-Nach dem die Views in SQL erstellt wurde, wurden die Views von der Postgres Datenbank in PowerBI importiert und in ein Stern-Schema modelliert.
+Nachdem die SQL-Views erstellt wurden, wurden sie aus der PostgreSQL-Datenbank in Power BI importiert und zu einem Sternschema modelliert. Die Beziehungen sind 1:*; die Dimensionstabellen stehen auf der „1“-Seite, die Faktentabelle auf der „*“-Seite.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/stern_schema.PNG)
 
