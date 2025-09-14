@@ -58,7 +58,34 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 
 ## 4. Methodik / Vorgehen
 
+Die CSV files wurden in Datenbank-Management-Tool DBeaver geladen. In dieser Umgebung wurden die nötigen SQL-Abfrgen geschrieben.
+
 ### 4.1 Datenaufbereitung in SQL
+
+### Datenqualitätsprüfung
+
+- Prüfung auf **NULL-Werte** in `order_id` (Primärschlüssel) und `customer_id` (Fremdschlüssel) im Orders-Datensatz
+- Betroffene Zeilen wurden entfernt  
+- Analyse der **Kundenaktivität**: Alle Kunden haben nur **eine Bestellung** aufgegeben  
+- Beispiel-SQL-Abfrage siehe unten
+
+Beispielhafte SQL-Abfrage:
+
+/* Check 3: check if customers exist in dataset that had multiple orders */
+
+select
+	customer_id,
+	count(*) as order_count
+from vw_orders_clean
+group by customer_id 
+having count(*) > 1
+order by order_count desc;
+
+Weitere SQL-Abfragen können hier eingesehen werden.
+
+### Aufbereitung von Fact-Tabelle und Dim-Tabellen
+
+
 
 ### 4.2 Datenmodellierung & Transformation in in PowerBI
 
