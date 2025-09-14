@@ -72,6 +72,7 @@ Die CSV files wurden in Datenbank-Management-Tool DBeaver geladen. In dieser Umg
 Beispielhafte SQL-Abfrage:
 
 ```sql
+
 /* Check 3: check if customers exist in dataset that had multiple orders */
 select
     customer_id,
@@ -80,6 +81,8 @@ from vw_orders_clean
 group by customer_id
 having count(*) > 1
 order by order_count desc;
+
+```
 
 Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
 👉 [SQL Query Sammlung](ecommerce-sql-powerbi-portfolio/sql/data_quality_checks.sql)
