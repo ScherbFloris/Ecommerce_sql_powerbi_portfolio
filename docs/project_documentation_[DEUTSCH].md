@@ -164,7 +164,11 @@ from dim_product
 Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:  
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
 
-### 4.2 Datenmodellierung & Transformation in in PowerBI
+### 4.2 Datenmodellierung in PowerBI
+
+Nach dem die Views in SQL erstellt wurde, wurden die Views von der Postgres Datenbank in PowerBI importiert und in ein Stern-Schema modelliert.
+
+<img width="953" height="767" alt="image" src="https://github.com/user-attachments/assets/7fe7b848-3d09-48b6-b4eb-bd67e8bb215e" />
 
 ## 5. Ergebnisse (Dashboards)
 
