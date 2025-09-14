@@ -81,7 +81,8 @@ group by customer_id
 having count(*) > 1
 order by order_count desc;
 
-Weitere SQL-Abfragen können hier eingesehen werden.
+Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
+👉 [SQL Query Sammlung](sql/data_quality_checks.md)
 
 ### Aufbereitung von Fact-Tabelle und Dim-Tabellen
 
