@@ -58,17 +58,17 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 
 ## 4. Methodik / Vorgehen
 
-# 4.1 Datenaufbereitung in SQL
+### 4.1 Datenaufbereitung in SQL
 
-# 4.2 Datenmodellierung & Transformation in in PowerBI
+### 4.2 Datenmodellierung & Transformation in in PowerBI
 
 ## 5. Ergebnisse (Dashboards)
 
-# 5.1 Sales Overiew Dashboard
+### 5.1 Sales Overiew Dashboard
 
-# 5.2 Product Analysis Dashboard
+### 5.2 Product Analysis Dashboard
 
-# 5.3 Regional Hotspot Analysis
+### 5.3 Regional Hotspot Analysis
 
 # 6. Empfehlugnen
 
