@@ -82,7 +82,7 @@ having count(*) > 1
 order by order_count desc;
 
 Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
-👉 [SQL Query Sammlung](sql/data_quality_checks.md)
+👉 [SQL Query Sammlung](ecommerce-sql-powerbi-portfolio/sql/data_quality_checks.sql)
 
 ### Aufbereitung von Fact-Tabelle und Dim-Tabellen
 
