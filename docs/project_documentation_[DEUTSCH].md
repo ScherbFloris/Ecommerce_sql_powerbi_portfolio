@@ -84,30 +84,6 @@ order by order_count desc;
 
 ```
 
-```sql
-CREATE OR REPLACE VIEW dim_date AS
-WITH src AS (
-  SELECT TO_TIMESTAMP(NULLIF(order_purchase_timestamp, ''), 'YYYY-MM-DD HH24:MI:SS') AS ts
-  FROM olist_orders_dataset
-  WHERE NULLIF(order_purchase_timestamp, '') IS NOT NULL
-),
-bounds AS (
-  SELECT MIN(ts)::date AS dmin, MAX(ts)::date AS dmax FROM src
-),
-series AS (
-  SELECT generate_series(dmin, dmax, '1 day')::date AS d FROM bounds
-)
-SELECT
-  d                         AS date,
-  TO_CHAR(d,'YYYYMMDD')::int AS date_key,
-  EXTRACT(YEAR FROM d)::int  AS year,
-  EXTRACT(QUARTER FROM d)::int AS quarter,
-  EXTRACT(MONTH FROM d)::int AS month,
-  TO_CHAR(d,'YYYY-MM')       AS year_month
-FROM series
-ORDER BY d;
-```
-
 Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/data_quality_checks.sql)
 
@@ -183,6 +159,30 @@ order by
 select *
 from dim_product
 
+```
+
+```sql
+CREATE OR REPLACE VIEW dim_date AS
+WITH src AS (
+  SELECT TO_TIMESTAMP(NULLIF(order_purchase_timestamp, ''), 'YYYY-MM-DD HH24:MI:SS') AS ts
+  FROM olist_orders_dataset
+  WHERE NULLIF(order_purchase_timestamp, '') IS NOT NULL
+),
+bounds AS (
+  SELECT MIN(ts)::date AS dmin, MAX(ts)::date AS dmax FROM src
+),
+series AS (
+  SELECT generate_series(dmin, dmax, '1 day')::date AS d FROM bounds
+)
+SELECT
+  d                         AS date,
+  TO_CHAR(d,'YYYYMMDD')::int AS date_key,
+  EXTRACT(YEAR FROM d)::int  AS year,
+  EXTRACT(QUARTER FROM d)::int AS quarter,
+  EXTRACT(MONTH FROM d)::int AS month,
+  TO_CHAR(d,'YYYY-MM')       AS year_month
+FROM series
+ORDER BY d;
 ```
 
 Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:  
