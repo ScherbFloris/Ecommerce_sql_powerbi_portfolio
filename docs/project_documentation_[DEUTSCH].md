@@ -161,6 +161,9 @@ from dim_product
 
 ```
 
+Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:  
+👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
+
 ### 4.2 Datenmodellierung & Transformation in in PowerBI
 
 ## 5. Ergebnisse (Dashboards)
