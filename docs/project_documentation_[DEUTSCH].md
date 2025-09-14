@@ -66,7 +66,8 @@ Die CSV files wurden in Datenbank-Management-Tool DBeaver geladen. In dieser Umg
 
 - Prüfung auf **NULL-Werte** in `order_id` (Primärschlüssel) und `customer_id` (Fremdschlüssel) im Orders-Datensatz
 - Betroffene Zeilen wurden entfernt  
-- Analyse der **Kundenaktivität**: Alle Kunden haben nur **eine Bestellung** aufgegeben  
+- Analyse der **Kundenaktivität**: Alle Kunden haben nur **eine Bestellung** aufgegeben
+- Weitere Datentransformation in PowerBI ist durch SQL Vorarbeit nicht nötig
 - Beispiel-SQL-Abfrage siehe unten
 
 Beispielhafte SQL-Abfrage:
