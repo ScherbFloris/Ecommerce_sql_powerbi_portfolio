@@ -87,12 +87,79 @@ order by order_count desc;
 Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/data_quality_checks.sql)
 
-👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/data_quality_checks.sql)  
-<sub>(öffnet sich in [neuem Tab](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/data_quality_checks.sql))</sub>
-
 ### Aufbereitung von Fact-Tabelle und Dim-Tabellen
 
+Für Power BI wurde ein **Sternschema** modelliert, damit Abfragen performant und eindeutig filterbar sind.
 
+**Fakten:**
+- `fact_table` (order_id, customer_id, price...)
+
+SQL-Abfrage:
+
+```sql
+
+create or replace view fact_table as
+select
+  -- Primary key
+    ood.order_id,
+  
+  -- Foreign keys (link to dimensions)                            
+    ood.customer_id,
+    ooid.seller_id,                                  
+    opd.product_id,
+    oord.review_id,
+  
+  -- Time attributes
+    ood.order_purchase_timestamp::timestamp as order_purchase_timestamp, -- key for date dimension
+    ood.order_purchase_timestamp::date as order_date,
+    to_char(ood.order_purchase_timestamp::date,'YYYYMMDD')::int as order_date_key,
+  
+  -- Measure
+    ooid.price
+  
+from olist_orders_dataset as ood
+join olist_order_items_dataset as ooid on ood.order_id = ooid.order_id
+join olist_products_dataset as opd  on ooid.product_id = opd.product_id
+left join olist_order_reviews_dataset as oord on ood.order_id = oord.order_id
+where ood.order_purchase_timestamp::date > '2016-12-31'; -- exclude incomplete year 2016
+
+```
+
+**Dimensionen (6):**
+- `dim_order` (order_id, order_year, order_quarter, order_month, ...)
+- `dim_reviews` (review_id, review_score, ...)
+- `dim_customer` (customer_id, customer_city, ...)
+- `dim_geolocation` (geolocation_zip_code_prefix, geolocation_lat, geolocation_lng, ...)
+- `dim_product` (product_id, product_category, ...)
+- `dim_date` (date, year, quarter, month, ...)
+
+Beispielhafte SQL-Abfrage:
+
+```sql
+
+create or replace view dim_product AS
+  
+select distinct
+  -- Primary key
+  ooid.product_id,
+
+  -- Product category
+  pcnt.product_category_name_english AS product_category
+  
+from
+    olist_products_dataset as opd
+inner join product_category_name_translation as pcnt 
+    on opd.product_category_name = pcnt.product_category_name
+inner join olist_order_items_dataset as ooid
+    on opd.product_id = ooid.product_id
+order by
+	product_id desc;
+
+-- Preview rows
+select *
+from dim_product
+
+```
 
 ### 4.2 Datenmodellierung & Transformation in in PowerBI
 
