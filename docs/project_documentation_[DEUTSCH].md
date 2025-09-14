@@ -85,7 +85,7 @@ order by order_count desc;
 ```
 
 Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
-👉 [SQL Query Sammlung](ecommerce-sql-powerbi-portfolio/sql/data_quality_checks.sql)
+👉 [SQL Query Sammlung](sql/dim_fact_views.sql)
 
 ### Aufbereitung von Fact-Tabelle und Dim-Tabellen
 
