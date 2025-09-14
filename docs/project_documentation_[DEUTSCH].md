@@ -172,6 +172,10 @@ Ausnahmen Gelten für die Dim-Reviews & Dim-Geolocation Tabellen. Direkter Link 
 
 ![Regional Demand Hotspots – Top 20 Cities](img/stern_schema.PNG)
 
+Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
+
+![Regional Demand Hotspots – Top 20 Cities](img/datum_hierarchie.PNG)
+
 ## 5. Ergebnisse (Dashboards)
 
 ### 5.1 Sales Overiew Dashboard
