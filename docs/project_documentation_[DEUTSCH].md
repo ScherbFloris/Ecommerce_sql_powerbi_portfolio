@@ -40,7 +40,7 @@ Die reinen Rohdaten von Olist sind umfangreich, aber für Stakeholder schwer dir
 Besonders für Entscheidungsträger in Marketing und Produktmanagement fehlen schnelle und visuelle Zugänge zu zentralen Fragestellungen.  
 Um datenbasierte Entscheidungen treffen zu können, müssen die Daten aufbereitet und in verständlicher Form dargestellt werden.
 
-### Zentrale Business-Fragen
+### Zentrale Business-Fragen*
 1. **Wie entwickeln sich Umsatz, Bestellungen und der durchschnittliche Bestellwert über die Zeit?**  
 2. **Welche Produkte und Kategorien sind die Haupttreiber von Umsatz und Bestellungen?**  
 3. **In welchen Städten und Regionen konzentriert sich die Nachfrage am stärksten?**
@@ -50,8 +50,9 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 
 | Problem | Ziel | Dashboard | Wichtige KPIs |
 |---------|------|-----------|---------------|
-| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und AOV sichtbar machen | **Sales Overview Dashboard** | Revenue, Orders, AOV, Wachstumsraten (MoM/YoY) |
+| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und Durchschnittlicher Bestellwert (AOV) sichtbar machen | **Sales Overview Dashboard** | Revenue, Orders, AOV, Wachstumsraten (MoM/YoY) |
 | Unklare Performance von Produktkategorien | Umsatztreiber und Potenziale identifizieren | **Product Analysis Dashboard** | Umsatz je Kategorie, Orders je Kategorie, AOV, Top-Produkte |
 | Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben | **Regional Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
 
+# * Dieses Projekt konzentriert sich auf den Zeitraum 2017, da dies das einzige vollständige Jahr im Datensatz ist.
 
