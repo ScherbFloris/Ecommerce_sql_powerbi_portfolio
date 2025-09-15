@@ -207,6 +207,8 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview.PNG)
 
+#### 5.1.1 Definierte & Verwendete DAX-Measures
+
 ### 5.2 Product Analysis Dashboard
 
 ### 5.3 Regional Hotspot Analysis
