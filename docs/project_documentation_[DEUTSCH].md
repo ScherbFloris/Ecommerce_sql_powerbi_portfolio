@@ -207,12 +207,18 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview.PNG)
 
-- **Top Product Category (Meist Verkaufte Produktkategorie):** Über das Jahr 2017 waren die meist verkauften Produkte von der Produktkategorie **bed_bath_table**.
-- **Order Quantity (Gesamtzahl an Bestellungen)**: Im Jahr 2017 wurden in der Summe **44.580 Bestellungen** getätigt.
-- **AOV (Durchschnittlicher Bestellwert):** Über das Jahr 2017 betrug der Durchschnittliche Bestellwert eines Kunden **R$ 138,45**.
-- **MoM Revenue %% (Monatliche Monatswachstumsrate):** In 9 von 11 Monaten ist der Monatsumsatz im vergleich zum Vormonat gestiegen. Von Juni bis November 2017 wuchs der Umsatz im Vergleich zum Vormonat stetig.
+- **Gesamtjahresumsatz:** 2017 wurde ein Umsatz von **R$ 6.172.009,91** erzielt.
+- **Top Product Category (Meist Verkaufte Produktkategorie):** Die meistverkaufte Kategorie 2017 war **bed_bath_table**.
+- **Order Quantity (Gesamtzahl an Bestellungen)**: 2017 wurden insgesamt **44.580** Bestellungen getätigt.
+- **AOV (Durchschnittlicher Bestellwert):** Der durchschnittliche Bestellwert lag 2017 bei **R$ 138,45** (pro Bestellung).
+- **MoM Revenue %% (Monatliche Monatswachstumsrate):** In **9 von 11** Monaten stieg der Umsatz gegenüber dem Vormonat. Von **Juni bis November 2017** wuchs der Umsatz durchgehend.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview_Q4.PNG)
+
+**Bei genauerer Betrachtung sehen wir das erfolgreichste Quartal**
+
+- **Erfolgreichstes Quartal (Q4):** Der Quartalsumsatz lag bei **$R 2.424.106,92**.
+- **Saisonalitätsindex:** **Oktober, November und Dezember 2017** verzeichneten die höchsten Umsätze – vermutlich aufgrund des Weihnachtsgeschäfts.
 
 #### 5.1.1 Definierte & Verwendete DAX-Measures
 
