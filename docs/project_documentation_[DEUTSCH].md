@@ -50,7 +50,7 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 
 | Problem | Ziel | Dashboard | Wichtige KPIs |
 |---------|------|-----------|---------------|
-| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und Durchschnittlicher Bestellwert (AOV) sichtbar machen | **Sales Overview Dashboard** | Revenue, Orders, AOV, Wachstumsraten (MoM/YoY) |
+| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und Durchschnittlicher Bestellwert (AOV) sichtbar machen | **Sales Overview Dashboard** | Umsatz, Bestellungen, Durchschnittlicher Bestellwert, Umsatz Wachstumsraten (MoM), Top Produktkategorie, Saisonalitätsindex |
 | Unklare Performance von Produktkategorien | Umsatztreiber und Potenziale identifizieren | **Product Analysis Dashboard** | Umsatz je Kategorie, Orders je Kategorie, AOV, Top-Produkte |
 | Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben | **Regional Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
 
