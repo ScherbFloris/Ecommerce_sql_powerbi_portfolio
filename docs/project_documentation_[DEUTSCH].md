@@ -205,7 +205,7 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 
 ### 5.1 Sales Overiew Dashboard
 
-![Regional Demand Hotspots – Top 20 Cities](sales_overview.PNG)
+![Regional Demand Hotspots – Top 20 Cities](img/sales_overview.PNG)
 
 ### 5.2 Product Analysis Dashboard
 
