@@ -212,7 +212,7 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 - **AOV (Durchschnittlicher Bestellwert):** Über das Jahr 2017 betrug der Durchschnittliche Bestellwert eines Kunden **R$ 138,45**.
 - **MoM Revenue %% (Monatliche Monatswachstumsrate):** In 9 von 11 Monaten ist der Monatsumsatz im vergleich zum Vormonat gestiegen. Von Juni bis November 2017 wuchs der Umsatz im Vergleich zum Vormonat stetig.
 
-- 
+![Regional Demand Hotspots – Top 20 Cities](img/sales_overview_Q4.PNG)
 
 #### 5.1.1 Definierte & Verwendete DAX-Measures
 
