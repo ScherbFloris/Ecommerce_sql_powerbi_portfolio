@@ -220,7 +220,7 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 - **Erfolgreichstes Quartal (Q4):** Der Quartalsumsatz lag bei **$R 2.424.106,92**.
 - **Saisonalitätsindex:** **Oktober, November und Dezember 2017** verzeichneten die höchsten Umsätze – vermutlich aufgrund des Weihnachtsgeschäfts.
 
-#### 5.1.1 Definierte & Verwendete DAX-Measures 
+#### 5.1.1 [Exemplarische] Definierte & Verwendete DAX-Measures 
 
 **DAX-Measure MoM Revenue %**
 
