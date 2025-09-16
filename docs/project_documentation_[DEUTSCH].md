@@ -254,7 +254,7 @@ IF(
 
 ### 5.2 Product Analysis Dashboard
 
-![Regional Demand Hotspots – Top 20 Cities](pareto_product_category.PNG)
+![Regional Demand Hotspots – Top 20 Cities](img/pareto_product_category.PNG)
 
 ### 5.3 Regional Hotspot Analysis
 
