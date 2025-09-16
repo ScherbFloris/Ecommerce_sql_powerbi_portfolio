@@ -222,6 +222,22 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 
 #### 5.1.1 Definierte & Verwendete DAX-Measures
 
+```dax
+MoM Revenue % = 
+VAR LastFactDate     = CALCULATE( MAX('public fact_table'[order_date]); ALL('public dim_date') )
+VAR LastFullMonthEnd = EOMONTH( LastFactDate; -1 )
+VAR CurMonthEnd      = EOMONTH( MAX('public dim_date'[Date]); 0 )
+VAR RevCM            = [Revenue]
+VAR RevPM            = CALCULATE( [Revenue]; DATEADD('public dim_date'[Date]; -1; MONTH) )
+VAR MoM              = DIVIDE( RevCM - RevPM; RevPM )
+RETURN
+IF(
+    NOT ISINSCOPE('public dim_date'[month]);         -- Totale/Jahreszeile
+    BLANK();
+    IF( CurMonthEnd > LastFullMonthEnd; BLANK(); MoM )
+)
+```
+
 ### 5.2 Product Analysis Dashboard
 
 ### 5.3 Regional Hotspot Analysis
