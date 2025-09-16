@@ -186,7 +186,7 @@ FROM series
 ORDER BY d;
 ```
 
-Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:  
+**Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:**
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
 
 ### 4.2 Datenmodellierung in PowerBI
@@ -220,25 +220,41 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 - **Erfolgreichstes Quartal (Q4):** Der Quartalsumsatz lag bei **$R 2.424.106,92**.
 - **Saisonalitätsindex:** **Oktober, November und Dezember 2017** verzeichneten die höchsten Umsätze – vermutlich aufgrund des Weihnachtsgeschäfts.
 
-#### 5.1.1 Definierte & Verwendete DAX-Measures
+#### 5.1.1 Definierte & Verwendete DAX-Measures 
+
+**DAX-Measure MoM Revenue %**
 
 ```dax
-MoM Revenue % = 
-VAR LastFactDate     = CALCULATE( MAX('public fact_table'[order_date]); ALL('public dim_date') )
-VAR LastFullMonthEnd = EOMONTH( LastFactDate; -1 )
-VAR CurMonthEnd      = EOMONTH( MAX('public dim_date'[Date]); 0 )
-VAR RevCM            = [Revenue]
-VAR RevPM            = CALCULATE( [Revenue]; DATEADD('public dim_date'[Date]; -1; MONTH) )
-VAR MoM              = DIVIDE( RevCM - RevPM; RevPM )
+Avg Monthly Revenue (Same Year) = 
+VAR y =
+    SELECTEDVALUE('public dim_date'[Year])
+VAR monthly =
+    SUMMARIZE(
+        FILTER(ALL('public dim_date'); 'public dim_date'[Year] = y);
+        'public dim_date'[Year];
+        'public dim_date'[month];        -- ggf. an deine Monats-Spalte anpassen
+        "Rev"; CALCULATE([Revenue])
+    )
 RETURN
-IF(
-    NOT ISINSCOPE('public dim_date'[month]);         -- Totale/Jahreszeile
-    BLANK();
-    IF( CurMonthEnd > LastFullMonthEnd; BLANK(); MoM )
-)
+IF( ISBLANK(y); BLANK(); AVERAGEX(monthly; [Rev]) )
 ```
 
+**Seasonality Index**
+
+```dax
+Seasonality Index (Month only) = 
+IF(
+    HASONEVALUE('public dim_date'[month]);
+    DIVIDE([Revenue]; [Avg Monthly Revenue (Same Year)]);
+    BLANK()
+)
+```
+**Weitere definierte DAX-Measures können hier eingesehen werden:**
+👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
+
 ### 5.2 Product Analysis Dashboard
+
+
 
 ### 5.3 Regional Hotspot Analysis
 
