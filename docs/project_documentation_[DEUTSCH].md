@@ -258,6 +258,8 @@ IF(
 
 ### 5.3 Regional Hotspot Analysis
 
+![Regional Demand Hotspots – Top 20 Cities](img/premium_demand_hotspot.PNG)
+
 # 6. Empfehlugnen
 
 # 7. Ausblick
