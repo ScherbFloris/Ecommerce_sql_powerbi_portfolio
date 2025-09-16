@@ -220,7 +220,7 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 - **Erfolgreichstes Quartal (Q4):** Der Quartalsumsatz lag bei **$R 2.424.106,92**.
 - **Saisonalitätsindex:** **Oktober, November und Dezember 2017** verzeichneten die höchsten Umsätze – vermutlich aufgrund des Weihnachtsgeschäfts.
 
-#### 5.1.1 [Exemplarische] Definierte & Verwendete DAX-Measures 
+#### 5.1.1 Definierte & Verwendete DAX-Measures [exemplarisch]
 
 **DAX-Measure MoM Revenue %**
 
@@ -254,7 +254,7 @@ IF(
 
 ### 5.2 Product Analysis Dashboard
 
-
+![Regional Demand Hotspots – Top 20 Cities](pareto_product_category.PNG)
 
 ### 5.3 Regional Hotspot Analysis
 
