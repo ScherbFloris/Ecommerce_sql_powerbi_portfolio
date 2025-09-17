@@ -256,9 +256,22 @@ IF(
 
 ![Regional Demand Hotspots – Top 20 Cities](img/pareto_product_category.PNG)
 
+- Pareto (80 %) Produktkategorien: 16 von über 120 verschiedenen Produktkategorien erwirtschaften 80 % des Umsatzes im Jahr 2017.
+- 35 000 Bestellungen [von insgesamt 45 000 Bestellungen] entfallen auf diese Produktkategorien.
+- Einge wenige Produktkategorien bringen mehr als 5 % des Jahresumsatzes [bed_bath_table, watches_gifts, health_beauty, sports_leisure, computer_asscessorie, cool_stuff & furniture_decore].
+- Da wir wissen, dass Kunden bei Olist einmalig Einkaufen, lohnt es sich im nächsten Schritt sich auf die Kunden zu konzentrieren, die einen überdurchschnittlich hohen Warenbestellwert (AOV).
+
+![Regional Demand Hotspots – Top 20 Cities](img/Top AOV.PNG)
+
+- Zwei Produktkategorien sind besonders interessant: computers & watches_gifts.
+- Diese Produktkategorien sind oberhalb der Trendlinie, also verhältnismäßig wenige Bestellungen, mit hohen Umsatzanteil. Wobei die Kategorie computers mit einem AOV-Index von 9,35 besonders hervorzuheben ist. Bedeutet: in der Kategorie computers ist der der durschnittliche Warenbestellwert 9,35 mal höher als der durschnlitliche Bestellwert!
+- Desweieren kann man erkennen, dass die Kategorie health_beauty unterhalb der Trendlinie somit diese Kategorie durch viele Bestellungen zu einem Umsattzanteil von 7,83 % beiträgt.
+
 ### 5.3 Regional Hotspot Analysis
 
 ![Regional Demand Hotspots – Top 20 Cities](img/premium_demand_hotspot.PNG)
+
+
 
 # 6. Empfehlugnen
 
