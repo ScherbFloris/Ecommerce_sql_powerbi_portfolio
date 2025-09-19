@@ -280,8 +280,9 @@ IF(
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
 
-![Regional Demand Hotspots – Top 20 Cities](img/scatter_plot_high_aov_high_orders.PNG)
+![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
 
+![Regional Demand Hotspots – Top 20 Cities](img/dash_high_orders_low_aov.PNG)
 
 
 
