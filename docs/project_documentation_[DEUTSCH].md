@@ -259,7 +259,7 @@ IF(
 - Pareto (80 %) Produktkategorien: 16 von über 120 verschiedenen Produktkategorien erwirtschaften 80 % des Umsatzes im Jahr 2017.
 - 35 000 Bestellungen [von insgesamt 45 000 Bestellungen] entfallen auf diese Produktkategorien.
 - Einge wenige Produktkategorien bringen mehr als 5 % des Jahresumsatzes [bed_bath_table, watches_gifts, health_beauty, sports_leisure, computer_asscessorie, cool_stuff & furniture_decore].
-- Da wir wissen, dass Kunden bei Olist einmalig Einkaufen, lohnt es sich im nächsten Schritt sich auf die Kunden zu konzentrieren, die einen überdurchschnittlich hohen Warenbestellwert (AOV).
+- Da wir wissen, dass Kunden bei Olist einmalig Einkaufen, lohnt es sich im nächsten Schritt sich auf die Kunden zu konzentrieren, die einen überdurchschnittlich hohen Warenbestellwert (AOV > 1).
 
 ![Regional Demand Hotspots – Top 20 Cities](img/top_aov.PNG)
 
@@ -269,7 +269,19 @@ IF(
 
 ### 5.3 Regional Hotspot Analysis
 
+- Im nächsten Schritt konzentrieren wir unsere Analyse auf die Produktkategorien die einen überdurchschnittlichen Warenbestellwert von AOV > 1 vorweisen [computers, auto, cool_stuff, office_furniture & watches_gifts].
+- Zusätzlich konzentireren wir uns, wo sich diese Premiumprodukte geografisch in den 20 relevantesten Städte, die 35,29 % des Olist Gesamtumsatzes innerhalb der primium Produktkategorien konzentrieren.
+
 ![Regional Demand Hotspots – Top 20 Cities](img/premium_demand_hotspot.PNG)
+
+- Die 20 relevantesten Städte befinden sich alle in Brasilien, wobei sich der großteil der durch den verkauften Premiumprodukte in und um Sao Paulo befindet
+- **Im nächsten Schritt, stellt sich die Frage, durch welche verkaufsfördernde Maßnamen weitere premium Produkte verkauft werden können.**
+- **Dabei werden nun im nächsten Schritt die Städte im Scatter-Plot identifiziert, die über / bzw. unterdurchschnittliche Order und AOV vorweißen**
+
+![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
+
+![Regional Demand Hotspots – Top 20 Cities](img/scatter_plot_high_aov_high_orders.PNG)
+
 
 
 
