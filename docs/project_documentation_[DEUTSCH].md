@@ -273,7 +273,7 @@ IF(
 
 
 
-# 6. Empfehlugnen
+# 6. Empfehlungen
 
 # 7. Ausblick
 
