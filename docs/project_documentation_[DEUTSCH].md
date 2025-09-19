@@ -280,11 +280,18 @@ IF(
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
 
-![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
+- Städte die eine überdurchschnittlich hohe AVO und Bestellzahl haben sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
+- Auffällig ist, dass in diesen Städten insbesondere Produkte von der Produktkategorie watches_gifts gekauft werden.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_orders_low_aov.PNG)
 
+- Städte die eine unterdurchschnittlich hohe AVO und eine überdurchschnittliche Bestellzahl haben sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
+- In diesen Städten werden vorallem Premiumprodukte der Kategorie auto, cool_stuff und watches_gifts verkauft.
 
+![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
+
+- Städte die eine überdurchschnittlich hohe AVO und eine unterdurchschnittliche Bestellzahl haben sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
+- In diesen Städten werden insbesondere Produkte aus der Produktkategorie cool_stuff und watches_gifts gekauft.
 
 # 6. Empfehlungen
 
