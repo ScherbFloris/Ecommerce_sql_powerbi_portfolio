@@ -1,6 +1,4 @@
 
-## :warning: Please Check the English Version Below :warning:
-
 # 🛍️ E-Commerce Data Analyst Portfolio
 
 Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Datensatz des brasilianischen Onlineunternehmens Olist. Der Datensatz wurde auf kaggle.com zur Verfügung gestellt: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
