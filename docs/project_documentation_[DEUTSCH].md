@@ -15,7 +15,7 @@
     - [5.3 Regional Premium Hotspot Dashboard](#53-regional-premium-hotspot-dashboard) 
 - [6. Handlungsempfehlungen](#6-handlungsempfehlungen)
 	-  [6.1 Halten & Target Marketing](#61-halten--target-marketing)
-  	-  [6.2 Geo-Conversion-Offensive](#62-geo-conversion-oaffensive)
+  	-  [6.2 Geo-Conversion-Offensive](#62-geo-conversion-offensive)
   	-  [6.3 Cross- & Up-Selling](#63-cross---up-selling)
 
 
