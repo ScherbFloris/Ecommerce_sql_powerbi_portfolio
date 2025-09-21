@@ -295,10 +295,10 @@ IF(
 
 # 6. Handlungsempfehlungen
 
-|                 | **Hohe Orders**             | **Niedrige Orders**          |
+|                 | **Niedrige Bestellmenge**             | **Hohe Bestellmenge**          |
 |-----------------|-----------------------------|------------------------------|
-| **Hoher AOV**   | Q1: hoch/hoch – … Maßnahmen | Q4: hoch/niedrig – …         |
-| **Niedriger AOV** | Q2: niedrig/hoch – …        | Q3: niedrig/niedrig – …      |
+| **Hoher AOV**   | Hozizontale Werbemasnahmen | Halten & Target Marketing         |
+| **Niedriger AOV** |                          | Bundle      |
 
 
 
