@@ -295,17 +295,10 @@ IF(
 
 # 6. Handlungsempfehlungen
 
-quadrantChart
-    title AOV vs. Orders
-    x-axis Niedrige Orders --> Hohe Orders
-    y-axis Niedriger AOV --> Hoher AOV
-    quadrant-1 "Q1: hoch/hoch"
-    quadrant-2 "Q2: hoch/niedrig"
-    quadrant-3 "Q3: niedrig/niedrig"
-    quadrant-4 "Q4: niedrig/hoch"
-    %% Optional Punkte
-    São_Paulo: [0.85, 0.90]
-    Fortaleza: [0.30, 0.40]
+|                 | **Hohe Orders**             | **Niedrige Orders**          |
+|-----------------|-----------------------------|------------------------------|
+| **Hoher AOV**   | Q1: hoch/hoch – … Maßnahmen | Q4: hoch/niedrig – …         |
+| **Niedriger AOV** | Q2: niedrig/hoch – …        | Q3: niedrig/niedrig – …      |
 
 
 
