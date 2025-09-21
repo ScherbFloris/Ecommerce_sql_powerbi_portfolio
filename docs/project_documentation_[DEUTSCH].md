@@ -293,9 +293,22 @@ IF(
 - Städte die eine überdurchschnittlich hohe AVO und eine unterdurchschnittliche Bestellzahl haben sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
 - In diesen Städten werden insbesondere Produkte aus der Produktkategorie cool_stuff und watches_gifts gekauft.
 
-# 6. Empfehlungen
+# 6. Handlungsempfehlungen
 
-# 7. Ausblick
+quadrantChart
+    title AOV vs. Orders
+    x-axis Niedrige Orders --> Hohe Orders
+    y-axis Niedriger AOV --> Hoher AOV
+    quadrant-1 "Q1: hoch/hoch"
+    quadrant-2 "Q2: hoch/niedrig"
+    quadrant-3 "Q3: niedrig/niedrig"
+    quadrant-4 "Q4: niedrig/hoch"
+    %% Optional Punkte
+    São_Paulo: [0.85, 0.90]
+    Fortaleza: [0.30, 0.40]
+
+
+
 
 
 
