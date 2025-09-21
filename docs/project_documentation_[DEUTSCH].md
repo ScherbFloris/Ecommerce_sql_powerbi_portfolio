@@ -7,6 +7,12 @@
 - [3. Problemidentifikation & Zielsetzung](#3-problemidentifikation--zielsetzung)
 - [4. Methodik / Vorgehen](#4-methodik--vorgehen)
   - [4.1 Datenaufbereitung in SQL](#41-datenaufbereitung-in-sql)
+  - [4.2 Datenmodellierung in PowerBI](#41-datenmodellierung-in-powerbi)
+- [5. Ergebnisse (Dashboards)](#5-ergebnisse-dashboards)
+	- [5.1 Sales Overview Dashboard](#51-sales-overview-dashboard)
+  		- [5.1.1 Definierte & Verwendete DAX-Measures [exemplarisch]](#511-definierte--verwendete-dax-measures-exemplarisch)
+
+
 
 ## 1. Kurzvorstellung Olist
 
@@ -206,7 +212,7 @@ Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
 
 ## 5. Ergebnisse (Dashboards)
 
-### 5.1 Sales Overiew Dashboard
+### 5.1 Sales Overview Dashboard
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview.PNG)
 
