@@ -6,7 +6,7 @@
 - [2. Datensatzbeschreibung](#2-datensatzbeschreibung)
 - [3. Problemidentifikation & Zielsetzung](#3-problemidentifikation--zielsetzung)
 - [4. Methodik / Vorgehen](#4-methodik--vorgehen)
-- - [4.1 Datenaufbereitung in SQL](#41-datenaufbereitung-in-sql)
+  - [4.1 Datenaufbereitung in SQL](#41-datenaufbereitung-in-sql)
 
 ## 1. Kurzvorstellung Olist
 
