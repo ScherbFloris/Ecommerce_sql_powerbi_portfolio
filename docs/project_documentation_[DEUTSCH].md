@@ -4,7 +4,7 @@
 ## Inhaltsverzeichnis
 - [1. Kurzvorstellung Olist](#1-kurzvorstellung-olist)
 - [2. Datensatzbeschreibung](#2-datensatzbeschreibung)
-- [3. Problemidentifikation & Zielsetzung](#3-Problemidentifikation & Zielsetzung)
+- [3. Problemidentifikation & Zielsetzung](#3-problemidentifikation-&-zielsetzung)
 
 ## 1. Kurzvorstellung Olist
 
