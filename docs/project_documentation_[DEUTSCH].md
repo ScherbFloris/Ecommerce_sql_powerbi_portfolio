@@ -280,26 +280,57 @@ IF(
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
 
-- Städte die eine überdurchschnittlich hohe AVO und Bestellzahl haben sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
+- Städte die eine **überdurchschnittlich hohe AVO und Bestellzahl** haben sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
 - Auffällig ist, dass in diesen Städten insbesondere Produkte von der Produktkategorie watches_gifts gekauft werden.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_orders_low_aov.PNG)
 
-- Städte die eine unterdurchschnittlich hohe AVO und eine überdurchschnittliche Bestellzahl haben sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
+- Städte die eine **unterdurchschnittlich hohe AVO** und eine **überdurchschnittliche Bestellmenge** haben sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
 - In diesen Städten werden vorallem Premiumprodukte der Kategorie auto, cool_stuff und watches_gifts verkauft.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
 
-- Städte die eine überdurchschnittlich hohe AVO und eine unterdurchschnittliche Bestellzahl haben sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
+- Städte die eine **überdurchschnittlich hohe AVO** und eine **unterdurchschnittliche Bestellmenge** haben sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
 - In diesen Städten werden insbesondere Produkte aus der Produktkategorie cool_stuff und watches_gifts gekauft.
 
 # 6. Handlungsempfehlungen
 
+- In einer 2 x 2 Matrix dargestellt, ergeben sich drei Quadranten in denen folgende Handlungsempfehlungen abgeleitet werden:
+
 |                 | **Niedrige Bestellmenge**             | **Hohe Bestellmenge**          |
 |-----------------|-----------------------------|------------------------------|
-| **Hoher AOV**   | Hozizontale Werbemasnahmen | Halten & Target Marketing         |
-| **Niedriger AOV** |                          | Bundle      |
+| **Hoher AOV**   | **Regionales Geo-Conversion-Offensive** | **Regionales Halten & Target Marketing**         |
+| **Niedriger AOV** |                          | **Regionales Cross- & Up-Selling**      |
 
+## 6.1 Halten & Target Marketing 
+
+## 6.2 Geo-Conversion-Offensiv
+
+**Problem:** In einigen Städten ist der durchschnittliche Bestellwert hoch, die Bestellmenge aber niedrig.
+**These:** Es fehlt an gezielter regionaler Sichtbarkeit und ein reibungsloser Kaufabschluss; Preisnachlässe sind nicht nötig.
+
+## **Handlungsempfehlungen:**
+
+1. Regionale Landingpage einführen
+   - In Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos Landing Pages einführen.
+   - Die Lieferzeit für diese Städte einfacherer sichtbar machen: "Lieferung nach 'Gioania' in 1 - 2 Werktage".
+   - Kostenlose Retouren anbieten
+2. Schwellenanreize setzen
+   - In diesen Städten einen kostenlosen Versand knapp über dem regionalen AOV-Median anbieten und klar kommunizieren:
+   - Z.B. "Nur noch Betrag X für einen Kostenlosen Versand nach Stadt 'Gioania'"
+   
+## 6.3 Cross- & Up-Selling
+
+**Problem:** In einigen Städten ist der durchschnittliche Bestellwert niedrig, die Bestellmenge aber hoch.
+**These:** Die Produkte sind beliebt und häufig gekauft, aber die Käufer legen den Fokus auf Preis oder kleine Warenkörbe.
+
+## **Handlungsempfehlungen:**
+
+1. Regionale  Cross- & Up-Selling Maßnahmen
+   - Innerhalb bestimmter Produktkategorien z.B. watches_gifts Regionale Angebote in den Regionen In den Regionen Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo anpassen.
+   - Cross-Selling: Uhren Einzeln und Uhren mit Pflegeset oder einem edlen Uhr-Armband anbieten.
+   - Up-Selling: personalisierungen der Geschenke und Uhren anbieten wie z.B. Gravuren (Up-Selling)
+  
 
 
 
