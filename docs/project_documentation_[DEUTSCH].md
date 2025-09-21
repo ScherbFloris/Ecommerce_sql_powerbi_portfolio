@@ -282,7 +282,7 @@ IF(
 - Diese Produktkategorien sind oberhalb der Trendlinie, also verhältnismäßig wenige Bestellungen, mit hohen Umsatzanteil. Wobei die Kategorie computers mit einem AOV-Index von 9,35 besonders hervorzuheben ist. Bedeutet: in der Kategorie computers ist der der durschnittliche Warenbestellwert 9,35 mal höher als der durschnlitliche Bestellwert!
 - Desweieren kann man erkennen, dass die Kategorie health_beauty unterhalb der Trendlinie somit diese Kategorie durch viele Bestellungen zu einem Umsattzanteil von 7,83 % beiträgt.
 
-### 5.3 Regional Hotspot Analysis
+### 5.3 Regional Premium Hotspot Dashboard
 
 - Im nächsten Schritt konzentrieren wir unsere Analyse auf die Produktkategorien die einen überdurchschnittlichen Warenbestellwert von AOV > 1 vorweisen [computers, auto, cool_stuff, office_furniture & watches_gifts].
 - Zusätzlich konzentireren wir uns, wo sich diese Premiumprodukte geografisch in den 20 relevantesten Städte, die 35,29 % des Olist Gesamtumsatzes innerhalb der primium Produktkategorien konzentrieren.
