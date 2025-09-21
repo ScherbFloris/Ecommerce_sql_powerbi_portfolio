@@ -304,6 +304,20 @@ IF(
 
 ## 6.1 Halten & Target Marketing 
 
+**Best-Case**
+**These:** Kunden sind kaufkräftig und kaufen oft. Die Strategie muss sein die Kundenbindung zu sichern & den Bestellwert zu stabilisieren.
+
+## **Handlungsempfehlungen:**
+
+1. Regional die Kundenbindung ausbauen
+   - Wie eingangs erwähnst, kaufen Bestellen die Kunden bei Olist einmal.
+   - Bei diesem Segment ist es daher wichtig, die Kunden in den Regionen Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro zu reaktivieren und zum erneuten Einkaufen auf Olist zu bewegen.
+2. Target Marketing:
+   - Kunden aus diesen Regionen individuelle Angebote basierend auf ihren letzten Einkauf zukommen lassen.
+   - Diesen Kunden dabei einen kostenlosen Versand anbieten.
+3. VIP-Mitgliedschaft:
+   - Längerfristig wäre eine Mitgliedschaft für diese Kunden denkbar, die längerfristig von für sie eingeschränkte Sonderaktionen profitieren können.
+
 ## 6.2 Geo-Conversion-Offensiv
 
 **Problem:** In einigen Städten ist der durchschnittliche Bestellwert hoch, die Bestellmenge aber niedrig.
