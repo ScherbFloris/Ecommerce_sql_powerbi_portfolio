@@ -15,6 +15,7 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 - [**SQL-Abfragen**](./sql/)
 - [**PowerBI-pbix-datei**](./power_bi/pbix_file/)
   - [**PowerBI-Dashboard-Screenshots**](./power_bi/screenshots/)
+  - [**PowerBI-DAX-Measures**](./power_bi/dax_measures/dax_measures.md)
 
 ## 📂 Struktur
 
