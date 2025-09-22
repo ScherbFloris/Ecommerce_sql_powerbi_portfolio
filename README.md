@@ -21,6 +21,6 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 
 ```plaintext
 /docs/        → Dokumentation & Interpretation
-/power_bi/    → Enthält Dashboard-Screenshots & .pbix Datei
+/power_bi/    → Enthält Dashboard-Screenshots, DAX-Measures & .pbix Datei
 /sql/         → Enthält alle SQL-Abfragen  
 README.md     → Überblick über das Projekt
