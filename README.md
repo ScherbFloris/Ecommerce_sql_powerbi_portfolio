@@ -12,7 +12,7 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 ## 🔍 Inhalt
 
 - [**Projektdokumentation**](./docs/project_documentation_%5BDEUTSCH%5D.md)
-- 🔎 SQL-Abfragen → [`/sql/data_quality_checks.sql`](sql/data_quality_checks.sql)
+- [**SQL-Abfragen**](./sql/)
 - 📝 PowerBI Dashboards → [`/docs/data_quality.md`](docs/data_quality.md)
 
 ## 📂 Struktur
