@@ -19,6 +19,7 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 ## 📂 Struktur
 
 ```plaintext
+/docs/        → Dokumentation & Interpretation
+/power_bi/    → Enthält Dashboard-Screenshots & .pbix Datei
 /sql/         → Enthält alle SQL-Abfragen  
-/docs/        → Dokumentation & Interpretation  
 README.md     → Überblick über das Projekt
