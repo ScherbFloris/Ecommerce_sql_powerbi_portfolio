@@ -1,1 +1,7 @@
 
+### Revenue
+
+´´´sql
+Revenue = 
+SUM('public fact_table'[price])
+´´´
