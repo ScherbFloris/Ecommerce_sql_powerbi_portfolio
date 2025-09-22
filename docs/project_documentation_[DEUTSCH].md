@@ -58,7 +58,8 @@ Um datenbasierte Entscheidungen treffen zu können, müssen die Daten aufbereite
 ### Zentrale Business-Fragen*
 1. **Wie entwickeln sich Umsatz, Bestellungen und der durchschnittliche Bestellwert über die Zeit?**  
 2. **Welche Produkte und Kategorien sind die Haupttreiber von Umsatz und Bestellungen?**  
-3. **In welchen Städten und Regionen konzentriert sich die Nachfrage am stärksten?**
+3. **In welchen Städten und Regionen ist die Nachfrage nach Premium-Produktkategorien am stärksten konzentriert?**
+4. **Welche konkrete Handlungsmaßnahmen können für die Absatzsteeigerung dieser Premium-Produkte abgeleitet werden**
 
 ### Abgeleitete Dashboards
 Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
@@ -67,7 +68,7 @@ Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
 |---------|------|-----------|---------------|
 | Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und Durchschnittlicher Bestellwert (AOV) sichtbar machen | **Sales Overview Dashboard** | Umsatz, Bestellungen, Durchschnittlicher Bestellwert, Umsatz Wachstumsraten (MoM), Top Produktkategorie, Saisonalitätsindex |
 | Unklare Performance von Produktkategorien | Umsatztreiber und Potenziale identifizieren | **Product Analysis Dashboard** | Umsatz je Kategorie, Orders je Kategorie, AOV, Top-Produkte |
-| Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben | **Regional Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
+| Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben im Segment Premium Produktkategorien| **Regional Premium Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
 
 ### * Dieses Projekt konzentriert sich auf den Zeitraum 2017, da dies das einzige vollständige Jahr im Datensatz ist.
 
@@ -284,28 +285,28 @@ IF(
 
 ### 5.3 Regional Premium Hotspot Dashboard
 
-- Im nächsten Schritt konzentrieren wir unsere Analyse auf die Produktkategorien die einen überdurchschnittlichen Warenbestellwert von AOV > 1 vorweisen [computers, auto, cool_stuff, office_furniture & watches_gifts].
-- Zusätzlich konzentireren wir uns, wo sich diese Premiumprodukte geografisch in den 20 relevantesten Städte, die 35,29 % des Olist Gesamtumsatzes innerhalb der primium Produktkategorien konzentrieren.
+- Im nächsten Schritt konzentrieren wir unsere Analyse auf die Produktkategorien, die einen überdurchschnittlichen Bestellwert (AOV-Index > 1) aufweisen. [computers, auto, cool_stuff, office_furniture & watches_gifts].
+- Zusätzlich untersuchen wir die räumliche Verteilung dieser Premiumprodukte in den 20 relevantesten Städten. Auf diese Städte entfallen 35,29 % des Olist-Gesamtumsatzes in den Premium-Produktkategorien.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/premium_demand_hotspot.PNG)
 
-- Die 20 relevantesten Städte befinden sich alle in Brasilien, wobei sich der großteil der durch den verkauften Premiumprodukte in und um Sao Paulo befindet
-- **Im nächsten Schritt, stellt sich die Frage, durch welche verkaufsfördernde Maßnamen weitere premium Produkte verkauft werden können.**
-- **Dabei werden nun im nächsten Schritt die Städte im Scatter-Plot identifiziert, die über / bzw. unterdurchschnittliche Order und AOV vorweißen**
+- Alle 20 relevantesten Städte liegen in Brasilien. Der Großteil der Verkäufe von Premiumprodukten entfällt auf den Großraum São Paulo.
+- **Im nächsten Schritt prüfen wir, welche verkaufsfördernden Maßnahmen den Absatz von Premiumprodukten weiter steigern.**
+- **Im nächsten Schritt markieren wir im Scatterplot Städte mit über- oder unterdurchschnittlichen Bestellzahlen und AOV.**
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
 
-- Städte die eine **überdurchschnittlich hohe AVO und Bestellzahl** haben sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
-- Auffällig ist, dass in diesen Städten insbesondere Produkte von der Produktkategorie watches_gifts gekauft werden.
+- Städte die eine **überdurchschnittlich hohe AVO und Bestellzahl** aufweisen sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
+- Auffällig ist, dass in diesen Städten vor allem Produkte aus der Kategorie „Uhren & Geschenke“ gekauft werden.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_orders_low_aov.PNG)
 
-- Städte die eine **unterdurchschnittlich hohe AVO** und eine **überdurchschnittliche Bestellmenge** haben sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
-- In diesen Städten werden vorallem Premiumprodukte der Kategorie auto, cool_stuff und watches_gifts verkauft.
+- Städte die eine **unterdurchschnittlich hohe AVO** und eine **überdurchschnittliche Bestellmenge** aufweisen sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
+- In diesen Städten werden vor allem Premiumprodukte der Kategorie auto, cool_stuff und watches_gifts verkauft.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
 
-- Städte die eine **überdurchschnittlich hohe AVO** und eine **unterdurchschnittliche Bestellmenge** haben sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
+- Städte die eine **überdurchschnittlich hohe AVO** und eine **unterdurchschnittliche Bestellmenge** aufweisen sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
 - In diesen Städten werden insbesondere Produkte aus der Produktkategorie cool_stuff und watches_gifts gekauft.
 
 # 6. Handlungsempfehlungen
