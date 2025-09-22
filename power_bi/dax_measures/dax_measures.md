@@ -32,12 +32,6 @@ MAXX (
 Orders = DISTINCTCOUNT('public fact_table'[order_id])
 ```
 
-### Order Quantity
-
-```dax
-Orders = DISTINCTCOUNT('public fact_table'[order_id])
-```
-
 ###  Saisonality Index Per Month
 
 ```dax
