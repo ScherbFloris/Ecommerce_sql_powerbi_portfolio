@@ -4,8 +4,8 @@
 
 ## Inhaltsverzeichnis
 - [1. Brief Introduction to Olist](#1-brief-introduction-to-olist)
-- [2. Datensatzbeschreibung](#2-datensatzbeschreibung)
-- [3. Problemidentifikation & Zielsetzung](#3-problemidentifikation--zielsetzung)
+- [2. Dataset Description](#2-dataset-description)
+- [3. Problem Identification & Objectives](#3-problem-identification-&-objectives)
 - [4. Methodik / Vorgehen](#4-methodik--vorgehen)
   - [4.1 Datenaufbereitung in SQL](#41-datenaufbereitung-in-sql)
   - [4.2 Datenmodellierung in PowerBI](#41-datenmodellierung-in-powerbi)
@@ -25,50 +25,57 @@
 
 Olist is a Brazilian e-commerce company that operates a marketplace platform for small and medium-sized merchants. Instead of selling goods itself, Olist enables external sellers to list their products on its online marketplace. Olist handles key functions such as product listing, marketing, payment processing, logistics, and customer service. This gives merchants a simplified entry into Brazil’s online retail market.
 
-## 2. Datensatzbeschreibung
+## 2. Dataset Description
 
 **Quelle:**  
-Der Datensatz stammt von [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) und wurde von Olist zur Verfügung gestellt.  
+The dataset comes from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and was provided by Olist.  
 
-**Größe:**  
-- 9 Tabellen  
-- > 100.000 Bestellungen (Zeitraum: 2016–2018)  
-- mehrere Millionen Zeilen insgesamt  
+**Size:**  
 
-**Datenbereiche:**  
-- **Bestellungen** (Auftrags-IDs, Zeitstempel, Status)  
-- **Produkte** (Kategorie, Preis, Maße, Gewicht)  
-- **Kunden & Geodaten** (PLZ, Stadt, Bundesstaat)  
+- 9 tables
+- 100,000 orders (period: 2016–2018)
+- several million rows in total  
 
-**Eignung des Datensatzes:**  
-Der Olist-Datensatz ist für Analyse- und BI-Projekte besonders geeignet, da er:  
-- **umfangreich** ist mit einer umfangreich großen Datenmenge,  
-- **realistische Geschäftsprozesse** eines Online-Marktplatzes abbildet,  
-- **vielfältige Dimensionen** enthält (Zeit, Region, Produkt, Kunde, Umsatz),  
-- und sich daher ideal für **SQL-Datenmodellierung** sowie die **Erstellung interaktiver Dashboards** eignet.
+**Data Groups:**  
+- **Orders** (order IDs, timestamps, status)
+- **Products** (category, price, dimensions, weight)
+- **Customers & Geodata** (ZIP code, city, state)
 
-## 3. Problemidentifikation & Zielsetzung
+**Why this dataset is suitable:**
 
-Die reinen Rohdaten von Olist sind umfangreich, aber für Stakeholder schwer direkt zu interpretieren.  
-Besonders für Entscheidungsträger in Marketing und Produktmanagement fehlen schnelle und visuelle Zugänge zu zentralen Fragestellungen.  
-Um datenbasierte Entscheidungen treffen zu können, müssen die Daten aufbereitet und in verständlicher Form dargestellt werden.
+The Olist dataset is well-suited for analytics and BI projects because it:
 
-### Zentrale Business-Fragen*
-1. **Wie entwickeln sich Umsatz, Bestellungen und der durchschnittliche Bestellwert über die Zeit?**  
-2. **Welche Produkte und Kategorien sind die Haupttreiber von Umsatz und Bestellungen?**  
-3. **In welchen Städten und Regionen ist die Nachfrage nach Premium-Produktkategorien am stärksten konzentriert?**
-4. **Welche konkrete Handlungsmaßnahmen können für die Absatzsteeigerung dieser Premium-Produkte abgeleitet werden**
+- is **large-scale** with substantial data volume,
+- reflects realistic business processes of an online marketplace,
+- offers **diverse dimensions** (time, region, product, customer, revenue),
+- and **is ideal for SQL data modeling and building interactive dashboards.**
 
-### Abgeleitete Dashboards
-Um diese Fragen zu beantworten, wurden drei Dashboards entwickelt:
+## 3. Problem Identification & Objectives
 
-| Problem | Ziel | Dashboard | Wichtige KPIs |
-|---------|------|-----------|---------------|
-| Kein Überblick über Umsatz- und Bestellentwicklung | Entwicklung von Umsatz, Bestellungen und Durchschnittlicher Bestellwert (AOV) sichtbar machen | **Sales Overview Dashboard** | Umsatz, Bestellungen, Durchschnittlicher Bestellwert, Umsatz Wachstumsraten (MoM), Top Produktkategorie, Saisonalitätsindex |
-| Unklare Performance von Produktkategorien | Umsatztreiber und Potenziale identifizieren | **Product Analysis Dashboard** | Umsatz je Kategorie, Orders je Kategorie, AOV, Top-Produkte |
-| Unklare regionale Nachfrage-Hotspots | Wichtigste Städte/Regionen für Umsatz hervorheben im Segment Premium Produktkategorien| **Regional Premium Demand Dashboard (Hotspots)** | Umsatz nach Stadt, Umsatzanteile, Orders, AOV |
+- Olist’s raw data is extensive but hard for stakeholders to interpret directly.
+- Decision-makers in Marketing and Product Management lack quick, visual access to key questions.
+- To enable data-driven decisions, the data must be prepared and presented in a clear, understandable form.
 
-### * Dieses Projekt konzentriert sich auf den Zeitraum 2017, da dies das einzige vollständige Jahr im Datensatz ist.
+**Objective: Transform raw Olist data into actionable insights via a clean data model and intuitive dashboards that answer core business questions fast.**
+
+### Core Business Questions
+
+1. **How do revenue, orders, and average order value (AOV) evolve over time?**
+2. **Which products and categories are the primary drivers of revenue and orders?**
+3. **In which cities and regions is demand for premium product categories most concentrated?**
+4. **What concrete actions can be taken to increase sales of these premium products?**
+
+### Derived Dashboards
+
+To answer the core business questions, three dashboards were built:
+
+| Problem | Goal | Dashboard | Key KPIs |
+|---|---|---|---|
+| No clear view of revenue and order trends | Make revenue, orders, and Average Order Value (AOV) development visible | **Sales Overview Dashboard** | Revenue, Orders, AOV, Revenue Growth (MoM), Top Product Category, Seasonality Index |
+| Unclear performance of product categories | Identify revenue drivers and opportunities | **Product Analysis Dashboard** | Revenue by Category, Orders by Category, AOV, Top Products |
+| Unclear regional demand hotspots | Highlight top cities/regions for revenue within premium product categories | **Regional Premium Demand Dashboard (Hotspots)** | Revenue by City, Revenue Shares, Orders, AOV |
+
+> **Note:** This project focuses on 2017, as it is the only complete year in the dataset.
 
 ## 4. Methodik / Vorgehen
 
