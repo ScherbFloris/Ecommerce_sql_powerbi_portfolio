@@ -26,6 +26,7 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 /power_bi/    → Enthält Dashboard-Screenshots, DAX-Measures & .pbix Datei
 /sql/         → Enthält alle SQL-Abfragen  
 README.md     → Überblick über das Projekt
+```
 
 # 🛍️ E-Commerce Data Analyst Portfolio
 
@@ -43,10 +44,8 @@ Dataset on Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 - [**Project Execution & Documentation (DE)**](./docs/project_documentation_%5BENGLINSH%5D.md)
 - [**SQL Queries**](./sql/)
 - [**Power BI (.pbix)**](./power_bi/pbix_file/)
-  - [**Dashboard Screenshots**](./power_bi/screenshots/)
-  - [**Power BI DAX Measures**](./power_bi/dax_measures/dax_measures.md)
-
-> Further SQL queries for data-quality checks can be found here: [./sql/](./sql/)
+- [**Dashboard Screenshots**](./power_bi/screenshots/)
+- [**Power BI DAX Measures**](./power_bi/dax_measures/dax_measures.md)
 
 ## 📂 Structure
 
@@ -55,3 +54,4 @@ Dataset on Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 /power_bi/    → Dashboard screenshots, DAX measures & .pbix file
 /sql/         → All SQL queries
 README.md     → Project overview
+```
