@@ -8,7 +8,7 @@
 - [3. Problem Identification & Objectives](#3-problem-identification-&-objectives)
 - [4. Methodology / Approach](#4-methodology-/-approach)
   - [4.1 Data Preparation in SQL](#41-data-preparation-in-SQL)
-  - [4.2 Datenmodellierung in PowerBI](#41-datenmodellierung-in-powerbi)
+  - [4.2 Data Modeling in Power BI](#41-data-modeling-in-power-bi)
 - [5. Ergebnisse (Dashboards)](#5-ergebnisse-dashboards)
 	- [5.1 Sales Overview Dashboard](#51-sales-overview-dashboard)
   		- [5.1.1 Definierte & Verwendete DAX-Measures [exemplarisch]](#511-definierte--verwendete-dax-measures-exemplarisch)
@@ -206,18 +206,27 @@ FROM series
 ORDER BY d;
 ```
 
-**Weitere SQL-Abfragen im Bereich Fact-Tabelle und Dim-Tabellen können hier eingesehen werden:**
+**Further SQL queries for the fact table and dimension tables can be found here:**
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
 
-### 4.2 Datenmodellierung in PowerBI
+### 4.2 Data Modeling in Power BI
 
-Nachdem die SQL-Views erstellt wurden, wurden sie aus der PostgreSQL-Datenbank in Power BI importiert und zu einem Sternschema modelliert. Die Beziehungen sind 1:*; die Dimensionstabellen stehen auf der „1“-Seite, die Faktentabelle auf der „*“-Seite. 
+After creating the SQL views, they were imported from PostgreSQL into Power BI and modeled as a **star schema**.  
+Relationships are **1:* (one-to-many)** with **dimensions on the “1” side** and the **fact table on the “*” side**. Cross-filtering is **single direction (Dim → Fact)** to avoid ambiguity.
 
-Ausnahmen Gelten für die Dim-Reviews & Dim-Geolocation Tabellen. Direkter Link zur Faktentabelle erzeugt n:n und ambiguen Filterpfad. Deshalb Beziehung `dim_geolocation → dim_customer → fact` & `dim_reviews → dim_order → fact`.
+**Exceptions (snowflake links to avoid M:M and ambiguous paths):**
+- `dim_geolocation → dim_customer → fact`  
+  *(Direct `dim_geolocation → fact` would create M:M and ambiguous filters.)*
+- `dim_reviews → dim_order → fact`  
+  *(Direct `dim_reviews → fact` would create M:M and ambiguous filters.)*
+
+**Diagram (simplified):**
 
 ![Regional Demand Hotspots – Top 20 Cities](img/stern_schema.PNG)
 
-Des Weiteren wurde in der dim_date Tabelle eine Datumhierarchie festgelegt.
+Additionally, a **date hierarchy** was defined in `dim_date` (Year → Quarter → Month → Day) and set as the default for visuals.  
+Tip: sort `Month` by `MonthNumber` and `YearMonth` (e.g., `YYYY-MM`) by an integer key to avoid alphabetical sorting.
+
 
 ![Regional Demand Hotspots – Top 20 Cities](img/datum_hierarchie.PNG)
 
