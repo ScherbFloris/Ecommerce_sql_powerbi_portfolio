@@ -6,8 +6,8 @@
 - [1. Brief Introduction to Olist](#1-brief-introduction-to-olist)
 - [2. Dataset Description](#2-dataset-description)
 - [3. Problem Identification & Objectives](#3-problem-identification-&-objectives)
-- [4. Methodik / Vorgehen](#4-methodik--vorgehen)
-  - [4.1 Datenaufbereitung in SQL](#41-datenaufbereitung-in-sql)
+- [4. Methodology / Approach](#4-methodology-/-approach)
+  - [4.1 Data Preparation in SQL](#41-data-preparation-in-SQL)
   - [4.2 Datenmodellierung in PowerBI](#41-datenmodellierung-in-powerbi)
 - [5. Ergebnisse (Dashboards)](#5-ergebnisse-dashboards)
 	- [5.1 Sales Overview Dashboard](#51-sales-overview-dashboard)
@@ -77,21 +77,20 @@ To answer the core business questions, three dashboards were built:
 
 > **Note:** This project focuses on 2017, as it is the only complete year in the dataset.
 
-## 4. Methodik / Vorgehen
+## 4. Methodology / Approach
 
-Die CSV files wurden in Datenbank-Management-Tool DBeaver geladen. In dieser Umgebung wurden die nötigen SQL-Abfrgen geschrieben.
+The CSV files were loaded into **DBeaver**. All **SQL preprocessing** (data quality checks, cleaning, and modeling) was done there. As a result, **no additional transformations** were required in Power BI (beyond data types and relationships).
 
-### 4.1 Datenaufbereitung in SQL
+### 4.1 Data Preparation in SQL
 
-### Datenqualitätsprüfung
+#### Data Quality Checks
 
-- Prüfung auf **NULL-Werte** in `order_id` (Primärschlüssel) und `customer_id` (Fremdschlüssel) im Orders-Datensatz.
-- Betroffene Zeilen wurden entfernt.
-- Analyse der **Kundenaktivität**: Alle Kunden haben nur **eine Bestellung** aufgegeben.
-- Weitere Datentransformation in PowerBI Power Query ist durch die SQL Vorarbeit nicht nötig.
-- Beispiel-SQL-Abfrage siehe unten.
+- **NULL checks** on key columns (`order_id` as primary key, `customer_id` as foreign key) in the orders dataset.
+- **Duplicate check** on `order_id`.
+- **Customer activity:** In Olist, *most customers place only one order* — this is verified explicitly (not assumed).
+- Creation of cleaned views/tables for direct consumption by Power BI.
 
-Beispielhafte SQL-Abfrage:
+**Example SQL (PostgreSQL-compatible):**
 
 ```sql
 
@@ -106,7 +105,7 @@ order by order_count desc;
 
 ```
 
-Weitere SQL-Abfragen im Bereich Datenqualitätsprüfung können hier eingesehen werden:  
+Further SQL queries for data quality checks can be found here: 
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/data_quality_checks.sql)
 
 ### Aufbereitung von Fact-Tabelle und Dim-Tabellen
