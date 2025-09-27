@@ -3,7 +3,7 @@
 # Projektdokumentation Olist Datensatz
 
 ## Inhaltsverzeichnis
-- [1. Kurzvorstellung Olist](#1-kurzvorstellung-olist)
+- [1. Brief Introduction to Olist](#1-brief-introduction-to-olist)
 - [2. Datensatzbeschreibung](#2-datensatzbeschreibung)
 - [3. Problemidentifikation & Zielsetzung](#3-problemidentifikation--zielsetzung)
 - [4. Methodik / Vorgehen](#4-methodik--vorgehen)
