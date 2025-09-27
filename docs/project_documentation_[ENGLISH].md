@@ -1,6 +1,6 @@
 
 
-# Projektdokumentation Olist Datensatz
+# Project Documentation Olist Dataset
 
 ## Inhaltsverzeichnis
 - [1. Brief Introduction to Olist](#1-brief-introduction-to-olist)
