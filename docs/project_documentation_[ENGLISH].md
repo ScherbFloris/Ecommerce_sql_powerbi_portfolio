@@ -9,7 +9,7 @@
 - [4. Methodology / Approach](#4-methodology-/-approach)
   - [4.1 Data Preparation in SQL](#41-data-preparation-in-SQL)
   - [4.2 Data Modeling in Power BI](#41-data-modeling-in-power-bi)
-- [5. Ergebnisse (Dashboards)](#5-ergebnisse-dashboards)
+- [5. Results (Dashboards)](#5-results-dashboards)
 	- [5.1 Sales Overview Dashboard](#51-sales-overview-dashboard)
   		- [5.1.1 Defined & Used DAX Measures (examples)](#511-defined-&-used-dax-measures-(examples))
     - [5.2 Product Analysis Dashboard](#52-product-analysis-dashboard)
