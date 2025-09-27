@@ -14,7 +14,7 @@
   		- [5.1.1 Defined & Used DAX Measures (examples)](#511-defined-&-used-dax-measures-(examples))
     - [5.2 Product Analysis Dashboard](#52-product-analysis-dashboard)
     - [5.3 Regional Premium Hotspot Dashboard](#53-regional-premium-hotspot-dashboard) 
-- [6. Handlungsempfehlungen](#6-handlungsempfehlungen)
+- [6. Recommendationsn](#6-recommendations)
 	-  [6.1 Halten & Target Marketing](#61-halten--target-marketing)
   	-  [6.2 Geo-Conversion-Offensiv](#62-geo-conversion-offensiv)
   	-  [6.3 Cross- & Up-Selling](#63-cross---up-selling)
