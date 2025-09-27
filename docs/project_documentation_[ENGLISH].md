@@ -11,7 +11,7 @@
   - [4.2 Data Modeling in Power BI](#41-data-modeling-in-power-bi)
 - [5. Ergebnisse (Dashboards)](#5-ergebnisse-dashboards)
 	- [5.1 Sales Overview Dashboard](#51-sales-overview-dashboard)
-  		- [5.1.1 Definierte & Verwendete DAX-Measures [exemplarisch]](#511-definierte--verwendete-dax-measures-exemplarisch)
+  		- [5.1.1 Defined & Used DAX Measures (examples)](#511-defined-&-used-dax-measures-(examples))
     - [5.2 Product Analysis Dashboard](#52-product-analysis-dashboard)
     - [5.3 Regional Premium Hotspot Dashboard](#53-regional-premium-hotspot-dashboard) 
 - [6. Handlungsempfehlungen](#6-handlungsempfehlungen)
@@ -225,31 +225,29 @@ Relationships are **1:* (one-to-many)** with **dimensions on the “1” side** 
 ![Regional Demand Hotspots – Top 20 Cities](img/stern_schema.PNG)
 
 Additionally, a **date hierarchy** was defined in `dim_date` (Year → Quarter → Month → Day) and set as the default for visuals.  
-Tip: sort `Month` by `MonthNumber` and `YearMonth` (e.g., `YYYY-MM`) by an integer key to avoid alphabetical sorting.
-
 
 ![Regional Demand Hotspots – Top 20 Cities](img/datum_hierarchie.PNG)
 
-## 5. Ergebnisse (Dashboards)
+## 5. Results (Dashboards)
 
 ### 5.1 Sales Overview Dashboard
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview.PNG)
 
-- **Gesamtjahresumsatz:** 2017 wurde ein Umsatz von **R$ 6.172.009,91** erzielt.
-- **Top Product Category (Meist Verkaufte Produktkategorie):** Die meistverkaufte Kategorie 2017 war **bed_bath_table**.
-- **Order Quantity (Gesamtzahl an Bestellungen)**: 2017 wurden insgesamt **44.580** Bestellungen getätigt.
-- **AOV (Durchschnittlicher Bestellwert):** Der durchschnittliche Bestellwert lag 2017 bei **R$ 138,45** (pro Bestellung).
-- **MoM Revenue %% (Monatliche Monatswachstumsrate):** In **9 von 11** Monaten stieg der Umsatz gegenüber dem Vormonat. Von **Juni bis November 2017** wuchs der Umsatz durchgehend.
+- **Total annual revenue:** In 2017, revenue was **R$ 6.172.009,91**.
+- **Top product category (most sold):** The most sold category in 2017 was **bed_bath_table**.
+- **Order quantity (total number of orders):** In 2017, there were **44.580** orders.
+- **AOV (Average Order Value):** The average order value in 2017 was **R$ 138,45** (per order).
+- **MoM revenue (%) (month-over-month growth rate):** In **9 out of 11** months, revenue increased compared to the previous month. From **June to November 2017**, revenue grew continuously.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/sales_overview_Q4.PNG)
 
-**Bei genauerer Betrachtung sehen wir das erfolgreichste Quartal**
+**On closer inspection, we see the best-performing quarter**
 
-- **Erfolgreichstes Quartal (Q4):** Der Quartalsumsatz lag bei **$R 2.424.106,92**.
-- **Saisonalitätsindex:** **Oktober, November und Dezember 2017** verzeichneten die höchsten Umsätze – vermutlich aufgrund des Weihnachtsgeschäfts.
+- **Best-performing quarter (Q4):** Quarterly revenue was **R$ 2.424.106,92**.
+- **Seasonality index:** **October, November, and December 2017** recorded the highest revenues — likely driven by the holiday season.
 
-#### 5.1.1 Definierte & Verwendete DAX-Measures [exemplarisch]
+#### 5.1.1 Defined & Used DAX Measures (examples)
 
 **DAX-Measure MoM Revenue %**
 
@@ -278,100 +276,111 @@ IF(
     BLANK()
 )
 ```
-**Weitere definierte DAX-Measures können hier eingesehen werden:**
+**Further defined DAX measures can be found here:**
 👉 [SQL Data Quality Checks](https://github.com/ScherbFloris/ecommerce-sql-powerbi-portfolio/blob/main/sql/dim_fact_views.sql)
 
 ### 5.2 Product Analysis Dashboard
 
 ![Regional Demand Hotspots – Top 20 Cities](img/pareto_product_category.PNG)
 
-- Pareto (80 %) Produktkategorien: 16 von über 120 verschiedenen Produktkategorien erwirtschaften 80 % des Umsatzes im Jahr 2017.
-- 35 000 Bestellungen [von insgesamt 45 000 Bestellungen] entfallen auf diese Produktkategorien.
-- Einge wenige Produktkategorien bringen mehr als 5 % des Jahresumsatzes [bed_bath_table, watches_gifts, health_beauty, sports_leisure, computer_asscessorie, cool_stuff & furniture_decore].
-- Da wir wissen, dass Kunden bei Olist einmalig Einkaufen, lohnt es sich im nächsten Schritt sich auf die Kunden zu konzentrieren, die einen überdurchschnittlich hohen Warenbestellwert (AOV > 1).
+- **Pareto (80%) product categories:** 16 out of 120+ different product categories generated **80% of 2017 revenue**.
+- **35,000 orders** [out of a total of **45,000** orders] fall into these product categories.
+- **A few categories contribute >5%** of annual revenue [**bed_bath_table**, **watches_gifts**, **health_beauty**, **sports_leisure**, **computer_asscessorie**, **cool_stuff**, **furniture_decore**].
+- Since we know that customers on Olist purchase only once, the next step is to focus on customers with an **above-average order value (AOV > 1)**.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/top_aov.PNG)
 
-- Zwei Produktkategorien sind besonders interessant: computers & watches_gifts.
-- Diese Produktkategorien sind oberhalb der Trendlinie, also verhältnismäßig wenige Bestellungen, mit hohen Umsatzanteil. Wobei die Kategorie computers mit einem AOV-Index von 9,35 besonders hervorzuheben ist. Bedeutet: in der Kategorie computers ist der der durschnittliche Warenbestellwert 9,35 mal höher als der durschnlitliche Bestellwert!
-- Desweieren kann man erkennen, dass die Kategorie health_beauty unterhalb der Trendlinie somit diese Kategorie durch viele Bestellungen zu einem Umsattzanteil von 7,83 % beiträgt.
+- **Two product categories stand out:** `computers` and `watches_gifts`.
+- These categories sit **above the trend line** — **relatively few orders** but a **high revenue share**. The `computers` category is especially notable with an **AOV Index of 9.35**.  
+  **Meaning:** in `computers`, the **average order value is 9.35× higher** than the overall average order value.
+- **Additionally**, `health_beauty` lies **below the trend line** — many orders but contributing **7.83% of annual revenue**.
 
 ### 5.3 Regional Premium Hotspot Dashboard
 
-- Im nächsten Schritt konzentrieren wir unsere Analyse auf die Produktkategorien, die einen überdurchschnittlichen Bestellwert (AOV-Index > 1) aufweisen. [computers, auto, cool_stuff, office_furniture & watches_gifts].
-- Zusätzlich untersuchen wir die räumliche Verteilung dieser Premiumprodukte in den 20 relevantesten Städten. Auf diese Städte entfallen 35,29 % des Olist-Gesamtumsatzes in den Premium-Produktkategorien.
+- In the next step, we focus our analysis on product categories with an **above-average order value** (**AOV Index > 1**): [`computers`, `auto`, `cool_stuff`, `office_furniture`, `watches_gifts`].
+- In addition, we examine the **spatial distribution** of these premium products across the **top 20 cities**. These cities account for **35.29%** of Olist’s **total revenue within premium product categories**.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/premium_demand_hotspot.PNG)
 
-- Alle 20 relevantesten Städte liegen in Brasilien. Der Großteil der Verkäufe von Premiumprodukten entfällt auf den Großraum São Paulo.
-- **Im nächsten Schritt prüfen wir, welche verkaufsfördernden Maßnahmen den Absatz von Premiumprodukten weiter steigern.**
-- **Im nächsten Schritt markieren wir im Scatterplot Städte mit über- oder unterdurchschnittlichen Bestellzahlen und AOV.**
+- All 20 key cities are in Brazil. The majority of premium-product sales are concentrated in the Greater São Paulo area.
+- **Next, we assess which sales promotions can further increase premium-product sales.**
+- **Next, we flag in the scatter plot the cities with above- or below-average order counts and AOV.**
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_higfh_aov_high_orders.PNG)
 
-- Städte die eine **überdurchschnittlich hohe AVO und Bestellzahl** aufweisen sind: Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro.
-- Auffällig ist, dass in diesen Städten vor allem Produkte aus der Kategorie „Uhren & Geschenke“ gekauft werden.
+- Cities with **above-average AOV and order counts**: **Guarulhos, Campinas, Salvador, Curitiba, and Rio de Janeiro**.
+- Notably, these cities predominantly purchase products from the **“watches_gifts”** category.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_orders_low_aov.PNG)
 
-- Städte die eine **unterdurchschnittlich hohe AVO** und eine **überdurchschnittliche Bestellmenge** aufweisen sind: Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo.
-- In diesen Städten werden vor allem Premiumprodukte der Kategorie auto, cool_stuff und watches_gifts verkauft.
+- Cities with **below-average AOV** and **above-average order volume**: **Fortaleza, Porto Alegre, Brasília, Belo Horizonte, and São Paulo**.
+- In these cities, premium products are primarily from the **auto**, **cool_stuff**, and **watches_gifts** categories.
 
 ![Regional Demand Hotspots – Top 20 Cities](img/dash_high_aov_low_orders.PNG)
 
-- Städte die eine **überdurchschnittlich hohe AVO** und eine **unterdurchschnittliche Bestellmenge** aufweisen sind: Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos.
-- In diesen Städten werden insbesondere Produkte aus der Produktkategorie cool_stuff und watches_gifts gekauft.
+- Cities with **above-average AOV** and **below-average order volume**: **Goiânia, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife, and São José dos Campos**.
+- In these cities, purchases are concentrated in the **cool_stuff** and **watches_gifts** categories.
 
-# 6. Handlungsempfehlungen
+# 6. Recommendations
 
-- In einer 2 x 2 Matrix dargestellt, ergeben sich drei Quadranten in denen folgende Handlungsempfehlungen abgeleitet werden:
+- Shown in a **2 × 2 matrix**, three quadrants yield the following recommended actions:
 
-|                 | **Niedrige Bestellmenge**             | **Hohe Bestellmenge**          |
-|-----------------|-----------------------------|------------------------------|
-| **Hoher AOV**   | **Regionales Geo-Conversion-Offensive** | **Regionales Halten & Target Marketing**         |
-| **Niedriger AOV** |                          | **Regionales Cross- & Up-Selling**      |
+|                 | **Low order volume**                 | **High order volume**              |
+|-----------------|--------------------------------------|------------------------------------|
+| **High AOV**    | **Regional Geo-Conversion Offensive** | **Regional Retention & Targeted Marketing** |
+| **Low AOV**     |                                      | **Regional Cross- & Up-Selling**   |
 
-## 6.1 Halten & Target Marketing 
+> Note: A 2×2 matrix has **four** quadrants. The cell **Low AOV × Low order volume** is currently unspecified. Typical options: awareness/market development, pricing/promo tests, or deprioritize.
 
-**Best-Case**
-**These:** Kunden sind kaufkräftig und kaufen oft. Die Strategie muss sein die Kundenbindung zu sichern & den Bestellwert zu stabilisieren.
+## 6.1 Retention & Targeted Marketing
 
-## **Handlungsempfehlungen:**
+**Best case**  
+**Hypothesis:** Customers are high-spending and purchase frequently. The strategy is to **secure retention** and **stabilize AOV**.
 
-1. Regional die Kundenbindung ausbauen
-   - Wie eingangs erwähnst, kaufen Bestellen die Kunden bei Olist einmal.
-   - Bei diesem Segment ist es daher wichtig, die Kunden in den Regionen Guarulhos, Campinas, Salvador, Curtiba & Rio de Janeiro zu reaktivieren und zum erneuten Einkaufen auf Olist zu bewegen.
-2. Target Marketing:
-   - Kunden aus diesen Regionen individuelle Angebote basierend auf ihren letzten Einkauf zukommen lassen.
-   - Diesen Kunden dabei einen kostenlosen Versand anbieten.
-3. VIP-Mitgliedschaft:
-   - Längerfristig wäre eine Mitgliedschaft für diese Kunden denkbar, die längerfristig von für sie eingeschränkte Sonderaktionen profitieren können.
+## **Recommendations**
 
-## 6.2 Geo-Conversion-Offensiv
+1. **Expand regional customer retention**
+   - As noted earlier, **most** Olist customers purchase only once.
+   - Focus on **reactivating** customers in **Guarulhos, Campinas, Salvador, Curitiba, and Rio de Janeiro** to drive repeat purchases.
 
-**Problem:** In einigen Städten ist der durchschnittliche Bestellwert hoch, die Bestellmenge aber niedrig.
-**These:** Es fehlt an gezielter regionaler Sichtbarkeit und ein reibungsloser Kaufabschluss; Preisnachlässe sind nicht nötig.
+2. **Targeted marketing**
+   - Send **personalized offers** to customers in these regions based on their last purchase.
+   - Offer **free shipping** as an incentive for the next order.
 
-## **Handlungsempfehlungen:**
+3. **VIP membership**
+   - Consider a **membership program** for these customers with exclusive, time-limited promotions to encourage loyalty.
 
-1. Regionale Landingpage einführen
-   - In Gioania, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife & Sao Jose dos Campos Landing Pages einführen.
-   - Die Lieferzeit für diese Städte einfacherer sichtbar machen: "Lieferung nach 'Gioania' in 1 - 2 Werktage".
-   - Kostenlose Retouren anbieten
-2. Schwellenanreize setzen
-   - In diesen Städten einen kostenlosen Versand knapp über dem regionalen AOV-Median anbieten und klar kommunizieren:
-   - Z.B. "Nur noch Betrag X für einen Kostenlosen Versand nach Stadt 'Gioania'"
-   
+---
+
+## 6.2 Geo-Conversion Offensive
+
+**Problem:** In some cities, **AOV is high** but **order volume is low**.  
+**Hypothesis:** Lack of regional visibility and friction at checkout; **discounts not required**.
+
+### Actions
+
+1. **Regional landing pages**
+   - Launch landing pages for **Goiânia, Bauru, Londrina, Juiz de Fora, Mogi das Cruzes, Recife, and São José dos Campos**.
+   - Make delivery times clearly visible, e.g., _“Delivery to Goiânia in 1–2 business days.”_
+   - Offer **free returns**.
+
+2. **Threshold incentives**
+   - Offer **free shipping** slightly **above the regional AOV median** and communicate it clearly:
+   - e.g., _“Only R$ X more for free shipping to Goiânia.”_
+
+---
+
 ## 6.3 Cross- & Up-Selling
 
-**Problem:** In einigen Städten ist der durchschnittliche Bestellwert niedrig, die Bestellmenge aber hoch.
-**These:** Die Produkte sind beliebt und häufig gekauft, aber die Käufer legen den Fokus auf Preis oder kleine Warenkörbe.
+**Problem:** In some cities, **AOV is low** but **order volume is high**.  
+**Hypothesis:** Products are popular and frequently purchased, but buyers focus on price or keep baskets small.
 
-## **Handlungsempfehlungen:**
+### Actions
 
-1. Regionale  Cross- & Up-Selling Maßnahmen
-   - Innerhalb bestimmter Produktkategorien z.B. watches_gifts Regionale Angebote in den Regionen In den Regionen Fortaleza, Porto Alegre, Brasilia, Belo Horizonte & Sao Paolo anpassen.
-   - Cross-Selling: Uhren Einzeln und Uhren mit Pflegeset oder einem edlen Uhr-Armband anbieten.
-   - Up-Selling: personalisierungen der Geschenke und Uhren anbieten wie z.B. Gravuren (Up-Selling)
+1. **Regional cross- & up-selling**
+   - For categories like **watches_gifts**, tailor regional offers for **Fortaleza, Porto Alegre, Brasília, Belo Horizonte, and São Paulo**.
+   - **Cross-sell:** Offer watches individually **and** as bundles (e.g., watch + care kit or premium strap).
+   - **Up-sell:** Offer **personalization** (e.g., **engraving**) for gifts and watches.
+
   
 
