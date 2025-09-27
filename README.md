@@ -1,4 +1,6 @@
 
+> ❗❗ Please check the English version below.
+
 # 🛍️ E-Commerce Data Analyst Portfolio
 
 Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Datensatz des brasilianischen Onlineunternehmens Olist. Der Datensatz wurde auf kaggle.com zur Verfügung gestellt: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
@@ -24,3 +26,32 @@ Dieses Projekt analysiert den der Öffentlichkeit zugänglichen E-Commerce-Daten
 /power_bi/    → Enthält Dashboard-Screenshots, DAX-Measures & .pbix Datei
 /sql/         → Enthält alle SQL-Abfragen  
 README.md     → Überblick über das Projekt
+
+# 🛍️ E-Commerce Data Analyst Portfolio
+
+This project analyzes the publicly available e-commerce dataset of the Brazilian company **Olist**.  
+Dataset on Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+## 📌 Project Goal
+
+- Demonstrate skills in problem definition and deriving suitable KPIs.
+- Showcase end-to-end analytics: data transformation & modeling through to visualization.
+- Highlight practical skills in **SQL (PostgreSQL)** and **Power BI**.
+
+## 🔍 Contents
+
+- [**Project Execution & Documentation (DE)**](./docs/project_documentation_%5BENGLINSH%5D.md)
+- [**SQL Queries**](./sql/)
+- [**Power BI (.pbix)**](./power_bi/pbix_file/)
+  - [**Dashboard Screenshots**](./power_bi/screenshots/)
+  - [**Power BI DAX Measures**](./power_bi/dax_measures/dax_measures.md)
+
+> Further SQL queries for data-quality checks can be found here: [./sql/](./sql/)
+
+## 📂 Structure
+
+```plaintext
+/docs/        → Documentation & interpretation
+/power_bi/    → Dashboard screenshots, DAX measures & .pbix file
+/sql/         → All SQL queries
+README.md     → Project overview
