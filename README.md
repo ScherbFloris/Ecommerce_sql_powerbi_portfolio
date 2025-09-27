@@ -44,8 +44,8 @@ Dataset on Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 - [**Project Execution & Documentation (DE)**](./docs/project_documentation_%5BENGLINSH%5D.md)
 - [**SQL Queries**](./sql/)
 - [**Power BI (.pbix)**](./power_bi/pbix_file/)
-- [**Dashboard Screenshots**](./power_bi/screenshots/)
-- [**Power BI DAX Measures**](./power_bi/dax_measures/dax_measures.md)
+  - [**Dashboard Screenshots**](./power_bi/screenshots/)
+  - [**Power BI DAX Measures**](./power_bi/dax_measures/dax_measures.md)
 
 ## 📂 Structure
 
